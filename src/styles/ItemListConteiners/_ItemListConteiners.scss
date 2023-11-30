@@ -1,7 +1,19 @@
+  .conteiner_item {
+    background-color: #7fffd4;
+    padding: 300px;
 
-.title_catalogo {
-    text-align: center;
+    .title_catalogo {
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 24px;
+    }
+
+    
+  .title_item {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 24px;
-    padding: 40px;
+    color: #000000;
+    text-align: center;
   }
+}
+
+
