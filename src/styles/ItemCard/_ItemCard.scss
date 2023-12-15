@@ -1,0 +1,18 @@
+.card {
+    width: 500px;
+    height: 500px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    .imagen {
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
