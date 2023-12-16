@@ -12,7 +12,7 @@ export const MOCK_DATA = [
         name: 'NOTEBOOK ASSUS',
         img : "/images/asuss.webp",
         precio: 374.999,
-        description : 'Notebook. Pantalla de 14" HD (1366 x 768) 16:9. Tasa de refresco 60 Hz. Brillo 200 nits. Procesador Intel Celeron N4020 Processor 1.1 GHz (4M Cache, up to 2.8 GHz, 2 cores). 128G eMMC. RAM 4GB DDR4 on board. Placa de video Intel UHD Graphics 600. Conexiones: Wi-Fi 5(802.11ac) (Dual band) 1*1 + Bluetooth 5.1 Wireless Card. 1x USB 2.0 Type-A. 1x USB 3.2 Gen 1 Type-A. 1x USB 3.2 Gen 1 Type-C. 1x HDMI 1.4. 1x Headphone/Headset. Microfono incorporado. Sistema operativo Windows 11 home. Camara VGA. Bateria 42WHrs, 3S1P, 3-cell Li-ion.'
+        description : 'Pantalla de 14". Procesador Intel Celeron N4020 2.8 GHz, RAM 4GB. Windows 11.'
     },
 
     {
@@ -38,5 +38,14 @@ export const MOCK_DATA = [
         precio: 179.982,
         description : 'SMART LED GOOGLE TV PHILIPS 32 PULGADAS HD 32PHD6918/77'
     },
+
+    {
+        id: 6,
+        name: 'TV HISENSE (oferta)',
+        img : "/images/tvhisense.jpg",
+        precio: 159.682,
+        description : 'SMART LED GOOGLE TV HISENSE 43 PULGADAS',
+        category : 'oferta'
+    }
 
 ]  

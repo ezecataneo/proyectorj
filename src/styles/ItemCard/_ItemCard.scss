@@ -1,18 +1,21 @@
-.card {
-    width: 500px;
-    height: 500px;
-    background-color: #ffffff;
+.cards {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
     justify-content: center;
     align-items: center;
+
+.card {
+    width: 370px;
+    height: 370px;
+    background-color: #ffffff; 
+    gap: 10px;
+    border: 2px #000000 solid;
 
     .imagen {
         object-fit: cover;
         width: 200px;
         height: 200px;
     }
+}
 }
 
 
