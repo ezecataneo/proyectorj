@@ -1,10 +1,13 @@
-export const Notebooks = () => {
+export const Notebooks = ({productos}) => {
 
     return (
         <section className="conteiner_item">
-            <h2 className="title_item">Notebooks</h2>
+            <h1 className="title_item">Notebooks</h1>
             <hr/>
             
+            { productos.map((item) => (
+                <ItemCard item={item}/>
+            ))}
         </section>
     );
 };
