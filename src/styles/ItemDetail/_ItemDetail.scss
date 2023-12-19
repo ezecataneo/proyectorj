@@ -1,3 +1,10 @@
+.conteiner-render {
+    background-color: #7fffd4;
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
 
 .card {
@@ -24,11 +31,10 @@
         height: 200px;
     }
 
-    .btn-vermas {
+    .btn-carrito{
         margin: 7px;
         padding: 7px;
-        background-color: #ffff00;
-        color: #0000ff;
+        background-color: #6f6ff8;
     }
 
     .descripcion {
@@ -39,5 +45,4 @@
     }
 }
 
-
-
+}
