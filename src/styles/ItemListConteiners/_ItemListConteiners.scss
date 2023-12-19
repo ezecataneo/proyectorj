@@ -1,6 +1,16 @@
   .conteiner_item {
     background-color: #7fffd4;
-    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    .p {
+      color: red;
+    }
+
 
     .title_catalogo {
       text-align: center;
@@ -9,11 +19,13 @@
     }
 
     
-  .title_item {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #000000;
-    text-align: center;
-  }
+  
 }
-
+.title_item {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000000;
+  text-align: center;
+  background-color: #7fffd4;
+  padding: 10px;
+}
 
