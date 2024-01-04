@@ -13,7 +13,7 @@ export const ItemDetailConteiner = () => {
         pedirDatos()
         .then ((data) => {
             setItem (data.find(prod => prod.id === Number(itemId)))
-            setProductos (item)
+            //setProductos (item)
         })
     }, [])
 

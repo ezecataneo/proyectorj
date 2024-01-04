@@ -1,5 +1,3 @@
-
-
 export const Cartwidget = () => {
     let counter = 0
 

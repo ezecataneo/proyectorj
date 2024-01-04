@@ -3,6 +3,7 @@ import { Cartwidget } from "./Cartwidget"
 
 
 
+
 export const NavBar = () => {
 
     return (
