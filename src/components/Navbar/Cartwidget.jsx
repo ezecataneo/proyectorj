@@ -1,7 +1,14 @@
+import { useContext } from "react"
+import { Link } from "react-router-dom"
+import { CartContext } from "../../context/CartContext"
+
+
+
 export const Cartwidget = () => {
-    let counter = 0
+    
+    const { itemsInCart } = useContext (CartContext)
 
     return (
-        <a className="num" href="#"><img className="carrito" src="/images/carrito.png" alt="carrito" />0</a>
+        < Link to="/cart" className="num" href="#"><img className="carrito" src="/images/carrito.png" alt="carrito" />{itemsInCart()}</Link>
     )
 }

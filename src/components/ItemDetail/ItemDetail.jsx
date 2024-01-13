@@ -1,11 +1,15 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { QuantitySelector } from "./QuantitySelector"
 import { ColorSelector } from "./ColorSelector"
+import { CartContext } from "../../context/CartContext"
+import { Link } from "react-router-dom"
+
 
 export const ItemDetail = ({item}) => {
 
     const [cantidad, setCantidad] = useState (1)
     const [color, setColor] = useState ("")
+    const { addToCart, isInCart } = useContext (CartContext)
 
 
     const handleAgregar = () => {
@@ -14,6 +18,8 @@ export const ItemDetail = ({item}) => {
             cantidad,
             color
         }
+
+        addToCart (itemToCart)
     }
     
     return (
@@ -23,14 +29,20 @@ export const ItemDetail = ({item}) => {
                 <h2>{item.name}</h2>
                 <p className="precio-producto">${item.precio}</p>
                 <p className="descripcion">{item.description}</p>
-                <QuantitySelector
-                cantidad={cantidad}
-                stock={item.stock}
-                setCantidad={setCantidad}
-                />
-                <ColorSelector setColor={setColor}/>
+                {
+                    isInCart (item.id)
+                        ? <Link to="/cart">Finalizar compra</Link>
+                        : <>
+                        <QuantitySelector
+                        cantidad={cantidad}
+                        stock={item.stock}
+                        setCantidad={setCantidad}
+                        />
+                        <ColorSelector setColor={setColor}/>
+                        <button onClick={handleAgregar} className="btn-carrito">Agregar al carrito</button>
+                        </>
+                }
                 
-                <button onClick={handleAgregar} className="btn-carrito">Agregar al carrito</button>
             </article>
         </div>
     )
